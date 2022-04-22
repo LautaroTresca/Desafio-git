@@ -13,10 +13,13 @@ body{
 
 header{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background: rgb(2,0,36);
+    background: linear-gradient(354deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 24%, rgba(0,212,255,1) 100%);
 }
 
 .ul-header{
+    animation: fadeInDown;
+    animation-duration: 1s;
     height: 100px;
     list-style: none;
     font-size: 18px;
@@ -26,13 +29,22 @@ header{
 }
 
 
+
 a{
     color: white;
     text-decoration: none;
 }
 
 
+li:hover{
+    transform: scale(1.2);
+    transition-duration: .5s;
+}
+
+
 h1{
+    animation: slideInLeft;
+    animation-duration: 1.4s;
     height: 80px;
     background-color: rgba(255, 255, 255, 0.75);
     text-align: center;
@@ -90,6 +102,7 @@ h2{
 .caja-dos{
     grid-area: recuadro2;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: rgba(0, 255, 255, 0.75);
     border: 1px solid black;
@@ -103,6 +116,7 @@ h2{
     grid-area: recuadro3;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba(0, 255, 255, 0.75);
     border: 1px solid black;
     height: 200px;
